@@ -2,6 +2,7 @@ import { Flex, Heading, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import ReactiveButton from 'reactive-button';
+import DownloadCv from '../../components/DownloadCv';
 
 export default function Home() {
   const [state, setState] = useState('idle');
@@ -29,7 +30,7 @@ export default function Home() {
     >
 
 
-      <Heading fontSize={{ 'lg': 50, 'md': 40, 'sm': 30 }}>I'm Muhammad Farooq</Heading>
+      <Heading fontSize={{ 'lg': 50, 'md': 40, 'sm': 38 }}>I'm Muhammad Farooq</Heading>
       <Heading fontSize={{ 'lg': 30, 'md': 25, 'sm': 20 }} fontWeight={300} mr={2}>A Full Stack {' '}
         <TypeAnimation
 
@@ -56,15 +57,9 @@ export default function Home() {
         Lorem ipsum dolor sit amet consectetur adipiscing elit, euismod faucibus quisque vehicula purus rutrum odio, diam velit fermentum parturient conubia consequat.
       </Text>
 
-      <ReactiveButton
-        buttonState={state}
-        idleText="Download Cv"
-        loadingText="Loading"
-        successText="Done"
-        onClick={onClickHandler}
-      />
+      
 
-
+          <DownloadCv />
 
     </Flex>
   )
