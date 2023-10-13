@@ -22,14 +22,14 @@ export default function Home() {
       height={'100%'}
       display={'flex'}
       justifyContent={'center'}
-      px={3}
+      px={5}
       alignItems={'start'}
       flexDirection={'column'}
       gap={5}
     >
 
 
-      <Heading fontSize={{ 'lg': 50, 'md': 40, 'sm': 25 }}>I'm Muhammad Farooq</Heading>
+      <Heading fontSize={{ 'lg': 50, 'md': 40, 'sm': 30 }}>I'm Muhammad Farooq</Heading>
       <Heading fontSize={{ 'lg': 30, 'md': 25, 'sm': 20 }} fontWeight={300} mr={2}>A Full Stack {' '}
         <TypeAnimation
 
