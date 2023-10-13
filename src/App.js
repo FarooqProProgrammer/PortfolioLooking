@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Sidebar from './components/Sidebar'
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Blog from './pages/Blog'
+import Portfolio from './pages/Portfolio'
+import RightBar from './components/RightBar'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='w-full flex relative h-screen bg-main'>
+      <BrowserRouter>
+        <Sidebar />
+        <RightBar />
+        <Routes>
+          <Route path='/' Component={Home} />
+          <Route path='/about' Component={About} />
+          <Route path='/contact' Component={Contact} />
+          <Route path='/blog' Component={Blog} />
+          <Route path='/portfolio' Component={Portfolio} />
+        </Routes>
+      </BrowserRouter>
     </div>
-  );
-}
 
-export default App;
+  ) 
+}
