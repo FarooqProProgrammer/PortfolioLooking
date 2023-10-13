@@ -1,9 +1,16 @@
 import React from 'react'
+import BlogCard from '../../components/BlogCard'
+import { Box } from '@chakra-ui/react'
 
-export default function Blog() {
+
+function Blog() {
+  
   return (
-    <div>
+    <>
+    
       
-    </div>
+
+    </>
   )
 }
+export default Blog

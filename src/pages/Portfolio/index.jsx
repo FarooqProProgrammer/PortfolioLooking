@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Portfolio() {
+function Portfolio() {
   return (
     <div>
       
     </div>
   )
 }
+
+export default Portfolio
